@@ -1,5 +1,7 @@
 # SmoochBot Examples
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/smooch/smooch-bot-example)
+
 Before you get started with any of these samples, from this directory you should:
 
 ```

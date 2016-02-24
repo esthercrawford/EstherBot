@@ -1,7 +1,18 @@
 {
   "name": "Smooch Bot Example App",
   "description": "Smooch Bot example using Express",
+  "keywords": ["smooch", "bot", "express"],
+  "website": "https://smooch.io",
   "repository": "https://github.com/smooch/smooch-bot-example",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["smooch", "bot", "express"]
+  "env": {
+    "SMOOCH_APP_TOKEN": {
+      "description": "Your Smooch app token which is used to initialize the web widget.",
+      "required": true
+    },
+    "SMOOCH_JWT": {
+      "description": "The JWT your bot will use to authenticate to the Smooch API. You can generate one using the jwt.js tool provided.",
+      "required": true
+    }
+  }
 }
