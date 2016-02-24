@@ -1,0 +1,40 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "quotes": [
+            2,
+            "single"
+        ],
+        "jsx-quotes": [
+            2,
+            "prefer-single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-unused-vars": 0,
+        "no-extra-boolean-cast": 0,
+        "no-console": 0,
+        "no-constant-condition": 0,
+        "no-redeclare": 0
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "commonjs": true,
+        "browser": true,
+        "mocha": true
+    },
+    "globals": {
+        "expect": true
+    },
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "extends": "eslint:recommended"
+}

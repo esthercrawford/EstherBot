@@ -1,0 +1,7 @@
+{
+  "name": "Smooch Bot Example App",
+  "description": "Smooch Bot example using Express",
+  "repository": "https://github.com/smooch/smooch-bot-example",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["smooch", "bot", "express"]
+}
