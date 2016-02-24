@@ -1,15 +1,18 @@
 'use strict';
 
 const jsonwebtoken = require('jsonwebtoken');
-const keyId = process.argv[2];
-const secret = process.argv[3];
 
 const jwt = jsonwebtoken.sign({
     scope: 'app'
-}, secret, {
+}, process.env.SMOOCH_SECRET, {
     headers: {
-        kid: keyId
+        kid: process.env.SMOOCH_KEY_ID
     }
 });
 
-console.log(jwt);
+module.exports = jwt;
+
+// If run directly, print JWT to cmd line 
+if (process.argv[1] === __filename) {
+    console.log(jwt);
+}

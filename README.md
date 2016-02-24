@@ -1,7 +1,5 @@
 # SmoochBot Examples
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/smooch/smooch-bot-example)
-
 Before you get started with any of these samples, from this directory you should:
 
 ```
@@ -12,6 +10,8 @@ All of these samples use the same scipt defined in `script.js`. Feel free to pla
 
 ## console
 
+![console](/img/console.gif)
+
 This is the simplest sample that runs via the command line and uses an in-memory store to track state.
 
 To run it, simply:
@@ -20,37 +20,41 @@ To run it, simply:
 $ node console
 ```
 
+And start chatting with your bot on the command line.
+
 ## smooch
 
-This sample is a simple express app that uses the Smooch web widget to provie the chat interface. The express service makes use of `SmoochApiStore` and `SmoochApiBot` to persist conversation state and user properties.
+![heroku](/img/heroku.gif)
 
-To get it running, there's a little bit of legwork.
+This sample is an Express app that uses the Smooch web widget to provide the chat interface. The app makes use of `SmoochApiStore` and `SmoochApiBot` to persist conversation state and user properties via Smooch.
 
 1. First, sign up for a free account at [smooch.io](https://app.smooch.io/signup)
 
-1. With a new Smooch app created, under settings, get your app token and save it to an enviornment variable, like so:
+1. With a new Smooch app created, go to the settings tab and take note of your App Roken. Also, generate a new Secret Key, and take note of the key ID and secret.
 
-        export SMOOCH_APP_TOKEN=yourAppToken
+    ![settings](/img/settings.png)
 
-1. Next, generate a Smooch API key, and use the API keyId + secret pair to generate a JWT. This JWT is what your express app will use to talk to the Smooch API. You can use the provided `jwt.js` script to do this:
+1. Deploy your app to Heroku using the button below. You'll need to specify your app token, key ID, and secret in the app's `SMOOCH_APP_TOKEN`, `SMOOCH_KEY_ID`, and `SMOOCH_SECRET` config settings.
 
+    [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/smooch/smooch-bot-example)
+
+1. Your app should now be running on Heroku but you're not quite done yet. You'll need to create a Smooch webhook that will allow your app to react to message events coming from Smooch. To do this, first create a JWT. You can use the `jwt.js` script provided, like so:
+
+        $ npm install
         $ export SMOOCH_JWT=`node jwt.js yourKeyId yourSecret`
 
-    The express app will make use of these `SMOOCH_APP_TOKEN` and `SMOOCH_JWT` environment variables.
+    Now run the following cURL command to create your webhook via the Smooch API (remember to replace `your-app-name` with your Heroku app's name):
 
-1. This sample relies on webhooks so you'll need to make your app internet visible somehow. You can deploy the app somwhere such as [heroku](http://heroku.com), but for now it might be easier to run it locally and use a tunneling services such as [ngrok](https://ngrok.com/). You can run the app locally with gulp:
-
-        $ npm install -g gulp-cli
-        $ gulp smooch
-
-1. Once your app is running and has an internet-visible URL, create a webhook points to it, like so. (be sure to replace `foo.ngrok.io` with your own host)
-
-        curl https://api.smooch.io/v1/webhooks \
+        $ curl https://api.smooch.io/v1/webhooks \
              -X POST \
-             -d '{"target": "http://foo.ngrok.io/webhook", "trigger": "message:appUser"}' \
+             -d '{"target": "https://your-app-name.herokuapp.com/webhook", "trigger": "message:appUser"}' \
              -H "content-type: application/json" \
              -H "authorization: Bearer $SMOOCH_JWT"
 
-1. Start chatting!
 
-Note that for task synchronization this sample uses the `MemoryLock`, so it won't work properly if run cluster. To run it on a cluster, you can simply swap out the given `MemoryLock` implmentation with one that relies on redis instead.
+1. Open your Heroku app and start chatting with your new bot!
+
+1. **Bonus:** Open the Smooch [control panel](https://app.smooch.io) and add more integraitons. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
+
+![slack1](/img/slack1.png)
+![slack2](/img/slack2.png)

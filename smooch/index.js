@@ -7,9 +7,10 @@ const SmoochApiBot = smoochBot.SmoochApiBot;
 const StateMachine = smoochBot.StateMachine;
 const app = require('../app');
 const script = require('../script');
+const jwt = require('../jwt');
 
 const store = new SmoochApiStore({
-    jwt: process.env.SMOOCH_JWT
+    jwt
 });
 const lock = new MemoryLock();
 

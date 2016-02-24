@@ -10,8 +10,12 @@
       "description": "Your Smooch app token which is used to initialize the web widget.",
       "required": true
     },
-    "SMOOCH_JWT": {
-      "description": "The JWT your bot will use to authenticate to the Smooch API. You can generate one using the jwt.js tool provided.",
+    "SMOOCH_KEY_ID": {
+      "description": "Your Smooch key ID, used to talk to the Smooch API",
+      "required": true
+    },
+    "SMOOCH_SECRET": {
+      "description": "Your Smooch secret, used to talk to the Smooch API",
       "required": true
     }
   }
