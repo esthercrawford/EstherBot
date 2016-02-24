@@ -10,9 +10,9 @@ All of these samples use the same scipt defined in `script.js`. Feel free to pla
 
 ## console
 
-![console](/img/console.gif)
-
 This is the simplest sample that runs via the command line and uses an in-memory store to track state.
+
+![console](/img/console.gif)
 
 To run it, simply:
 
@@ -24,9 +24,11 @@ And start chatting with your bot on the command line.
 
 ## smooch
 
+This sample is an Express app that uses the Smooch web widget to provide the chat interface. The app makes use of `SmoochApiStore` and `SmoochApiBot` to persist conversation state and user properties via Smooch.
+
 ![heroku](/img/heroku.gif)
 
-This sample is an Express app that uses the Smooch web widget to provide the chat interface. The app makes use of `SmoochApiStore` and `SmoochApiBot` to persist conversation state and user properties via Smooch.
+To deploy your own:
 
 1. First, sign up for a free account at [smooch.io](https://app.smooch.io/signup)
 
