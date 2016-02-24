@@ -43,7 +43,8 @@ To deploy your own:
 1. Your app should now be running on Heroku but you're not quite done yet. You'll need to create a Smooch webhook that will allow your app to react to message events coming from Smooch. To do this, first create a JWT. You can use the `jwt.js` script provided, like so:
 
         $ npm install
-        $ export SMOOCH_JWT=`node jwt.js yourKeyId yourSecret`
+        $ export SMOOCH_KEY_ID=yourKeyId SMOOCH_SECRET=yourSecret
+        $ export SMOOCH_JWT=`node jwt.js`
 
     Now run the following cURL command to create your webhook via the Smooch API (remember to replace `your-app-name` with your Heroku app's name):
 
@@ -58,5 +59,4 @@ To deploy your own:
 
 1. **Bonus:** Open the Smooch [control panel](https://app.smooch.io) and add more integraitons. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
 
-![slack1](/img/slack1.png)
-![slack2](/img/slack2.png)
+![slack](/img/slack.png)
