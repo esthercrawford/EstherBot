@@ -32,7 +32,7 @@ To deploy your own:
 
 1. First, sign up for a free account at [smooch.io](https://app.smooch.io/signup)
 
-1. With a new Smooch app created, go to the settings tab and take note of your App Roken. Also, generate a new Secret Key, and take note of the key ID and secret.
+1. With a new Smooch app created, go to the settings tab and take note of your App Token. Also, generate a new Secret Key, and take note of the key ID and secret.
 
     ![settings](/img/settings.png)
 
