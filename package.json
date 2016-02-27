@@ -4,7 +4,7 @@
   "description": "Smooch Bot Example Apps",
   "author": "Andrew Lavers <alavers@system42.net> (http://smooch.io/)",
   "scripts": {
-    "start": "node smooch"
+    "start": "node heroku"
   },
   "license": "MIT",
   "dependencies": {
