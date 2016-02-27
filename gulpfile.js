@@ -1,9 +1,9 @@
 var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 
-gulp.task('smooch', function() {
+gulp.task('heroku', function() {
     nodemon({
-        script: 'smooch',
+        script: 'heroku',
         ext: 'js html',
         env: {
             'NODE_ENV': 'development'
