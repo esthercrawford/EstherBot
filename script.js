@@ -1,36 +1,54 @@
 'use strict';
 
+const _ = require('lodash');
 const Script = require('smooch-bot').Script;
+
+const scriptRules = require('./script.json');
 
 module.exports = new Script({
     processing: {
-        prompt: (bot) => bot.say('Beep boop...'),
+        //prompt: (bot) => bot.say('Beep boop...'),
         receive: () => 'processing'
     },
 
     start: {
         receive: (bot) => {
-            return bot.say('Hi! I\'m Smooch Bot!')
-                .then(() => 'askName');
+            return bot.say('So you want to learn about Esther? Just say HELLO to get started.')
+                .then(() => 'speak');
         }
     },
 
-    askName: {
-        prompt: (bot) => bot.say('What\'s your name?'),
+    speak: {
         receive: (bot, message) => {
-            const name = message.text;
-            return bot.setProp('name', name)
-                .then(() => bot.say(`Great! I'll call you ${name}`))
-                .then(() => 'finish');
+            let imessage = message.text.toUpperCase();
+
+            switch (imessage) {
+                case "CONNECT ME":
+                    bot.setProp("silent", true);
+                    break;
+                case "DISCONNECT":
+                    return bot.setProp("silent", false).then(() => {
+                        return bot.say(scriptRules[imessage]).then(() => 'speak');
+                    });
+            }
+
+            return bot.getProp("silent").then((isSilent) => {
+
+                if (isSilent) {
+                    return new Promise(() => 'speak');
+                }
+
+                if (!_.has(scriptRules, imessage)) {
+                    return bot.say(`I didn't understand that.`).then(() => 'speak');
+                }
+
+                var response = scriptRules[imessage];
+
+                // todo handle images
+
+                return bot.say(scriptRules[imessage]).then(() => 'speak');
+
+            });
         }
     },
-
-    finish: {
-        receive: (bot, message) => {
-            return bot.getProp('name')
-                .then((name) => bot.say(`Sorry ${name}, my creator didn't ` +
-                        'teach me how to do anything else!'))
-                .then(() => 'finish');
-        }
-    }
 });

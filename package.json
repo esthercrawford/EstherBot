@@ -12,6 +12,7 @@
     "express": "^4.13.4",
     "hbs": "^4.0.0",
     "jsonwebtoken": "^5.7.0",
+    "lodash": "^4.6.1",
     "smooch-bot": "^1.0.0",
     "smooch-core": "^0.0.15"
   },
