@@ -20,35 +20,43 @@ module.exports = new Script({
 
     speak: {
         receive: (bot, message) => {
-            let imessage = message.text.toUpperCase();
 
-            switch (imessage) {
-                case "CONNECT ME":
-                    bot.setProp("silent", true);
-                    break;
-                case "DISCONNECT":
-                    return bot.setProp("silent", false).then(() => {
-                        return bot.say(scriptRules[imessage]).then(() => 'speak');
-                    });
+            let upperText = message.text.toUpperCase();
+
+            function updateSilent() {
+                switch (upperText) {
+                    case "CONNECT ME":
+                        return bot.setProp("silent", true);
+                    case "DISCONNECT":
+                        return bot.setProp("silent", false);
+                    default:
+                        return Promise.resolve();
+                }
             }
 
-            return bot.getProp("silent").then((isSilent) => {
+            function getSilent() {
+                return bot.getProp("silent");
+            }
 
+            function processMessage(isSilent) {
                 if (isSilent) {
-                    return new Promise(() => 'speak');
+                    return Promise.resolve("speak");
                 }
 
-                if (!_.has(scriptRules, imessage)) {
+                if (!_.has(scriptRules, upperText)) {
                     return bot.say(`I didn't understand that.`).then(() => 'speak');
                 }
 
-                var response = scriptRules[imessage];
+                var response = scriptRules[upperText];
 
                 // todo handle images
 
-                return bot.say(scriptRules[imessage]).then(() => 'speak');
+                return bot.say(response).then(() => 'speak');
+            }
 
-            });
+            return updateSilent()
+                .then(getSilent)
+                .then(processMessage);
         }
-    },
+    }
 });
