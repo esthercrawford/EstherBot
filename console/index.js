@@ -26,8 +26,9 @@ class ConsoleBot extends Bot {
 
             console.log(imageFile);
             var real = fs.realpathSync(imageFile);
-            console.log(real);
-            let source = fs.createReadStream(real);
+            let source = fs.readFileSync(real);
+
+            console.log(source);
 
             resolve();
         });
