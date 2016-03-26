@@ -10,6 +10,25 @@ const script = require('../script');
 const SmoochCore = require('smooch-core');
 const jwt = require('../jwt');
 
+class BetterSmoochApiBot extends SmoochApiBot {
+    constructor(options) {
+        super(options);
+    }
+
+    sendImage(imageFileName) {
+        const api = this.store.getApi();
+        let message = Object.assign({
+            role: 'appMaker'
+        }, {
+            name: this.name,
+            avatarUrl: this.avatarUrl
+        });
+
+        let source = fs.createReadStream(imageFileName);
+        return api.conversations.uploadImage(this.userId, source);
+    }
+}
+
 const name = 'SmoochBot';
 const avatarUrl = 'https://s.gravatar.com/avatar/f91b04087e0125153623a3778e819c0a?s=80';
 const store = new SmoochApiStore({
@@ -19,9 +38,9 @@ const lock = new MemoryLock();
 
 function createWebhook(smoochCore, target) {
     return smoochCore.webhooks.create({
-        target,
-        triggers: ['message:appUser']
-    })
+            target,
+            triggers: ['message:appUser']
+        })
         .then((res) => {
             console.log('Smooch webhook created at target', res.webhook.target);
         })
@@ -61,7 +80,7 @@ app.post('/webhook', function(req, res, next) {
     const userId = appUser.userId || appUser._id;
     const stateMachine = new StateMachine({
         script,
-        bot: new SmoochApiBot({
+        bot: new BetterSmoochApiBot({
             name,
             avatarUrl,
             lock,
