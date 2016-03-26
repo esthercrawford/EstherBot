@@ -48,10 +48,26 @@ module.exports = new Script({
                 }
 
                 var response = scriptRules[upperText];
+                var lines = response.split(/(<img src=\'[^>]*\'\/>)/);
 
-                // todo handle images
+                var p = Promise.resolve();
+                _.each(lines, function(line) {
+                    line = line.trim();
+                    if (!line.startsWith("<")) {
+                        p = p.then(function() {
+                            return bot.say(line);
+                        });
+                    } else {
+                        p = p.then(function() {
+                            var start = line.indexOf("'") + 1;
+                            var end = line.lastIndexOf("'");
+                            var imageFile = line.substring(start, end);
+                            return bot.sendImage(imageFile);
+                        });
+                    }
+                })
 
-                return bot.say(response).then(() => 'speak');
+                return p.then(() => 'speak');
             }
 
             return updateSilent()

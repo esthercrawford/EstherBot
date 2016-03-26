@@ -18,6 +18,13 @@ class ConsoleBot extends Bot {
             resolve();
         });
     }
+
+    sendImage(imageFile) {
+        return new Promise((resolve) => {
+            console.log("Image(" + imageFile + ")");
+            resolve();
+        });
+    }
 }
 
 const script = require('../script');
