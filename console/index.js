@@ -6,6 +6,7 @@ const MemoryLock = smoochBot.MemoryLock;
 const Bot = smoochBot.Bot;
 const Script = smoochBot.Script;
 const StateMachine = smoochBot.StateMachine;
+const fs = require('fs');
 
 class ConsoleBot extends Bot {
     constructor(options) {
@@ -22,6 +23,12 @@ class ConsoleBot extends Bot {
     sendImage(imageFile) {
         return new Promise((resolve) => {
             console.log("Image(" + imageFile + ")");
+
+            console.log(imageFile);
+            var real = fs.realpathSync(imageFile);
+            console.log(real);
+            let source = fs.createReadStream(real);
+
             resolve();
         });
     }

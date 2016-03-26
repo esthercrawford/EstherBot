@@ -24,7 +24,8 @@ class BetterSmoochApiBot extends SmoochApiBot {
             name: this.name,
             avatarUrl: this.avatarUrl
         });
-        let source = fs.createReadStream(imageFileName);
+        var real = fs.realpathSync(imageFileName);
+        let source = fs.createReadStream(real);
         return api.conversations.uploadImage(this.userId, source);
     }
 }
