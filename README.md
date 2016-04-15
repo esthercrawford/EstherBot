@@ -15,7 +15,7 @@ Creating this version will give you a web based chat app. With a few integration
 
     ![settings](/img/settings.png)
 
-1. Deploy your app to Heroku using the button below. You'll need to specify your app token, key ID, and secret in the app's `SMOOCH_APP_TOKEN`, `SMOOCH_KEY_ID`, and `SMOOCH_SECRET` config settings.
+1. Deploy your app to Heroku using the button below. It's a free service so go sign up if you don't already have an account. You'll need to specify your app token, key ID, and secret in the app's `SMOOCH_APP_TOKEN`, `SMOOCH_KEY_ID`, and `SMOOCH_SECRET` config settings.
 
     [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/esthercrawford/estherbot)
 
