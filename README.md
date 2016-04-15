@@ -1,36 +1,13 @@
-# SmoochBot Examples
+# EstherBot built using the Smooch Bot example
+If you want a slightly more sophisticated setup and are comfortable using the console then go see the original here: 'https://github.com/smooch/smooch-bot-example' 
 
-A set of example chat bots built on [smooch/smooch-bot](https://github.com/smooch/smooch-bot).
+## Build Your Bot
 
-Before you get started with any of these samples, from this directory you should:
-
-```
-$ npm install
-```
-
-All of these samples use the same scipt defined in `script.js`. Feel free to play around with it as you go.
-
-## Console Example (/console)
-
-This is the simplest sample that runs via the command line and uses an in-memory store to track state.
-
-![console](/img/console.gif)
-
-To run it, simply:
-
-```
-$ node console
-```
-
-And start chatting with your bot on the command line.
-
-## Heroku Example (/heroku)
-
-This is an Express app that uses the Smooch web widget to provide the chat interface. The app makes use of `SmoochApiStore` and `SmoochApiBot` to persist conversation state and user properties via Smooch.
+Creating this version will give you a web based chat app. With a few integrations inside of Smooch (like Twilio) you can have your bot talking on other platforms too including SMS, Facebook, and Telegram.  
 
 ![heroku](/img/heroku.gif)
 
-To deploy your own:
+## Get Started:
 
 1. First, sign up for a free account at [smooch.io](https://app.smooch.io/signup)
 
@@ -48,6 +25,6 @@ To deploy your own:
 
 1. You should be all set. Open your Heroku app and start chatting with your new bot!
 
-1. **Bonus:** Open the Smooch [control panel](https://app.smooch.io) and add more integraitons. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
+**Bonus:** Open the Smooch [control panel](https://app.smooch.io) and add more integraitons. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
 
 ![slack](/img/slack.png)
