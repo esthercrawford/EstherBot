@@ -1,7 +1,8 @@
 {
-    "HELLO": "Hey, I'm so glad you set EstherBot up!",
-    "TWITTER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: http://bit.ly/estherbot-tweet",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "HELLO": "Hey, I'm so glad you set berkaybot up!",
+    "TWITTER": "Let's tweet @ btutal so hhe knows you're setting a bot up. Here's a tweet that's ready to go: http://bit.ly/berkaybot",
+    "Facebook": "It is very nice to have bots to talk",
+    "Tell me a joke": "Do you realize that Berkay Oğulcan Tutal's first letters stands for BOT",
     "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back."
+    "DISCONNECT": "Roger that, berkaybot is back."
 }
