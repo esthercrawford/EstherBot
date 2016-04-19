@@ -30,7 +30,9 @@ By clicking on the pencil icon you can edit the document. The keywords are on th
 
 Keywords are not case sensitive for users.
 
-The only two keywords you don't want to change are CONNECT ME and DISCONNECT. CONNECT ME turns the automated chat off, so the bot will stop responding to keywords. DISCONNECT will turn the bot back on.
+The only two keywords you don't want to change are CONNECT ME and DISCONNECT. CONNECT ME turns the automated chat off, so the bot will stop responding to keywords. DISCONNECT will turn the bot back on. 
+
+Also, the initial script starts with "So you want to learn about Esther? ..." but of course you'll want to change that which you can find in the script.js file.
 
 ##Bonus
 Open the Smooch [control panel](https://app.smooch.io) and add more integrations. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
