@@ -1,7 +1,14 @@
 {
-    "HELLO": "Hey, I'm so glad you set EstherBot up!",
-    "TWITTER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: http://bit.ly/estherbot-tweet",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "HELLO": "Hello! I'm SigelBot. Ken created me to interact with new peeps. So... How are you?",
+    "GOOD": "Awesome. I am doing well myself.",
+    "OK": "Just OK? Maybe this will make you laugh: https://vine.co/v/iFdbWub6VFB",
+    "WHAT CAN YOU DO": "Some things I can do: DANCE and I can tell JOKES.",
+    "JOKE": "OK. What do you call a deer with no eyes?",
+    "WHAT": "No eyed-deer (say it out loud...)... I don't have good jokes.",
+    "THAT WAS BAD": "What do you call a deer with no eyes and no legs? Still no eyed-deer... OK, I'll stop.",
+    "TWITTER": "Let's tweet @ Ken and say hi.so he knows you're setting a bot up. Here's a tweet that's ready to go: http://bit.ly/estherbot-tweet",
+    "DANCE": "Oh, I got dance moves. Check this out: http://gph.is/15zPVjf",
+    "BYE": "Nice chatting with you. Hit me up again some time. Hopefully by then I'll have learned some new things to talk about.",
     "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back."
+    "DISCONNECT": "Roger that, SigelBot is back."
 }
