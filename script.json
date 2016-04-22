@@ -1,7 +1,12 @@
 {
-    "HELLO": "Hey, I'm so glad you set EstherBot up!",
-    "TWITTER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: http://bit.ly/estherbot-tweet",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "HOLA": "Hey, I'm so glad you set MarceloBot up!",
+    "TWITTER": "Let's tweet @ marcelo_dro so he knows you're setting a bot up. Or just sit back and have a good laugh!",
+    "I LOVE YOU": "Awh, shucks! I would like to get to know you first. How about we grab some coffe sometime?!",
+    "DRUGS": "I am sorry but Marcelo only likes Ibuprofen and Melatonin. Try Tony, we have heard great things from him.",
+    "ALCOHOL": "Marcelo's favorite drink is the Cuba Libre. Do you know how to make one of those?",
+    "VIRGIN": "Marcelo lost his virginity when he was 16. I am not sure if I should be sharing that with you...",
+    "WORK": "Right now Marcelo works at Zenefits at their San Francisco office. Too bad he can't spend more time traveling around California.",
+    "PASSION": "Marcelo wants to be part of the people building the future, but a socially responsible and humane one.",
     "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back."
+    "DISCONNECT": "Roger that, MarceloBot is back."
 }
