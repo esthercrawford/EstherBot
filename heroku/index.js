@@ -39,12 +39,24 @@ const store = new SmoochApiStore({
 const lock = new MemoryLock();
 
 function createWebhook(smoochCore, target) {
-    return smoochCore.webhooks.create({
+    smoochCore.webhooks.create({
             target,
             triggers: ['message:appUser']
         })
         .then((res) => {
             console.log('Smooch webhook created at target', res.webhook.target);
+        })
+        .catch((err) => {
+            console.error('Error creating Smooch webhook:', err);
+            console.error(err.stack);
+        });
+
+    return smoochCore.webhooks.create({
+            target,
+            triggers: ['postback']
+        })
+        .then((res) => {
+            console.log('Smooch postback webhook created at target', res.webhook.target);
         })
         .catch((err) => {
             console.error('Error creating Smooch webhook:', err);
@@ -67,6 +79,7 @@ if (process.env.SERVICE_URL) {
 }
 
 app.post('/webhook', function(req, res, next) {
+    var isTrigger = req.body.trigger == "postback";
     const messages = req.body.messages.reduce((prev, current) => {
         if (current.role === 'appUser') {
             prev.push(current);
@@ -74,7 +87,7 @@ app.post('/webhook', function(req, res, next) {
         return prev;
     }, []);
 
-    if (messages.length === 0) {
+    if (messages.length === 0 && !isTrigger) {
         return res.end();
     }
 
@@ -91,7 +104,14 @@ app.post('/webhook', function(req, res, next) {
         })
     });
 
-    stateMachine.receiveMessage(messages[0])
+    var msg = '';
+    if(!isTrigger) {
+        msg = messages[0];
+    } else {
+        msg = req.bodty.postbacks[0].action.payload;
+    }
+
+    stateMachine.receiveMessage(msg)
         .then(() => res.end())
         .catch((err) => {
             console.error('SmoochBot error:', err);
