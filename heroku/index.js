@@ -79,7 +79,7 @@ if (process.env.SERVICE_URL) {
 }
 
 app.post('/webhook', function(req, res, next) {
-    var isTrigger = req.body.trigger == "postback";
+    var isPostback = req.body.trigger == "postback";
     const messages = req.body.messages.reduce((prev, current) => {
         if (current.role === 'appUser') {
             prev.push(current);
@@ -105,7 +105,7 @@ app.post('/webhook', function(req, res, next) {
     });
 
     var msg = '';
-    if(!isTrigger) {
+    if(!isPostback) {
         msg = messages[0];
     } else {
         msg = req.bodty.postbacks[0].action.payload;
