@@ -109,10 +109,8 @@ app.post('/webhook', function(req, res, next) {
 
         msg = messages[0];
     } else {
-        console.log("IS A POSTBACK!");
         msg = req.body.postbacks[0];
         msg.text = msg.action.payload;
-        console.log(msg);
     }
 
     stateMachine.receiveMessage(msg)
