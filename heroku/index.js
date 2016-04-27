@@ -108,7 +108,8 @@ app.post('/webhook', function(req, res, next) {
     if(!isPostback) {
         msg = messages[0];
     } else {
-        msg = req.bodty.postbacks[0].action.payload;
+        msg = req.bodty.postbacks[0];
+        msg.text = msg.action.payload;
     }
 
     stateMachine.receiveMessage(msg)
