@@ -79,40 +79,37 @@ if (process.env.SERVICE_URL) {
 }
 
 app.post('/webhook', function(req, res, next) {
-    console.log("HELLO");
-    console.log(req.body);
-
     var isPostback = req.body.trigger == "postback";
-    const messages = req.body.messages.reduce((prev, current) => {
-        if (current.role === 'appUser') {
-            prev.push(current);
-        }
-        return prev;
-    }, []);
-
-    if (messages.length === 0 && !isTrigger) {
-        return res.end();
-    }
-
-    const appUser = req.body.appUser;
-    const userId = appUser.userId || appUser._id;
-    const stateMachine = new StateMachine({
-        script,
-        bot: new BetterSmoochApiBot({
-            name,
-            avatarUrl,
-            lock,
-            store,
-            userId
-        })
-    });
-
     var msg = '';
+
     if(!isPostback) {
+        const messages = req.body.messages.reduce((prev, current) => {
+            if (current.role === 'appUser') {
+                prev.push(current);
+            }
+            return prev;
+        }, []);
+
+        if (messages.length === 0 && !isTrigger) {
+            return res.end();
+        }
+
+        const appUser = req.body.appUser;
+        const userId = appUser.userId || appUser._id;
+        const stateMachine = new StateMachine({
+            script,
+            bot: new BetterSmoochApiBot({
+                name,
+                avatarUrl,
+                lock,
+                store,
+                userId
+            })
+        });
+
         msg = messages[0];
     } else {
         console.log("IS A POSTBACK!");
-        console.log(req.body);
         msg = req.bodty.postbacks[0];
         msg.text = msg.action.payload;
         console.log(msg);
