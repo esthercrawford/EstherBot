@@ -1,9 +1,3 @@
 {
-    "BOT": "'Hi there!'
-            'I’m the personal bot of Esther, a Product Marketer from San Francisco.'
-            '![Esther's Face](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)'
-            Want to know more about bots or learn about Esther? %[I'm here for the bot](postback:I'M HERE FOR THE BOT) %[Tell me more about Esther](postback:TELL ME MORE ABOUT ESTHER)",
-    "I'm here for the bot": "'Ha, I thought so!'
-                            '![Funny GIF](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/cameron-robot.gif)'
-                            Are you perhaps thinking about building your own bot? %[I'd like to](postback:I'D LIKE TO) %[Not yet...](postback:NOT YET)"   
+	"Hello" : "message 1"
 }
