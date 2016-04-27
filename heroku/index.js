@@ -108,6 +108,8 @@ app.post('/webhook', function(req, res, next) {
     if(!isPostback) {
         msg = messages[0];
     } else {
+        console.log("IS A POSTBACK!");
+        console.log(req.body);
         msg = req.bodty.postbacks[0];
         msg.text = msg.action.payload;
         console.log(msg);
