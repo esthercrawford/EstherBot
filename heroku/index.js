@@ -45,7 +45,19 @@ function createWebhook(smoochCore, target) {
         })
         .then((res) => {
             console.log('Smooch webhook created at target', res.webhook.target);
-        })
+            return smoochCore.webhooks.create({
+                        target,
+                        triggers: ['postback']
+                    })
+                    .then((res) => {
+                        console.log('Smooch postback webhook created at target', res.webhook.target);
+                    })
+                    .catch((err) => {
+                        console.error('Error creating Smooch webhook:', err);
+                        console.error(err.stack);
+                    });
+            }            
+        )
         .catch((err) => {
             console.error('Error creating Smooch webhook:', err);
             console.error(err.stack);
@@ -67,16 +79,8 @@ if (process.env.SERVICE_URL) {
 }
 
 app.post('/webhook', function(req, res, next) {
-    const messages = req.body.messages.reduce((prev, current) => {
-        if (current.role === 'appUser') {
-            prev.push(current);
-        }
-        return prev;
-    }, []);
-
-    if (messages.length === 0) {
-        return res.end();
-    }
+    var isPostback = req.body.trigger == "postback";
+    var msg = '';
 
     const appUser = req.body.appUser;
     const userId = appUser.userId || appUser._id;
@@ -89,9 +93,27 @@ app.post('/webhook', function(req, res, next) {
             store,
             userId
         })
-    });
+    });    
 
-    stateMachine.receiveMessage(messages[0])
+    if(!isPostback) {
+        const messages = req.body.messages.reduce((prev, current) => {
+            if (current.role === 'appUser') {
+                prev.push(current);
+            }
+            return prev;
+        }, []);
+
+        if (messages.length === 0 && !isTrigger) {
+            return res.end();
+        }
+
+        msg = messages[0];
+    } else {
+        msg = req.body.postbacks[0];
+        msg.text = msg.action.payload;
+    }
+
+    stateMachine.receiveMessage(msg)
         .then(() => res.end())
         .catch((err) => {
             console.error('SmoochBot error:', err);
