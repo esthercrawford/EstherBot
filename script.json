@@ -1,4 +1,7 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![Esther's Face](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Tell me more about Esther](postback:'tell_me_more')",
-    "I'M HERE FOR THE BOT": "Ha, I thought so!\n![GIF](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/cameron-robot.gif)\nAre you perhaps thinking about building your own bot? %[I'd like to](postback:ID_LIKE_TO] %[Not yet](postback:NOT_YET]"
+    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Yes](postback:twitter)",
+    "TWITTER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
+    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "CONNECT ME": "",
+    "DISCONNECT": "Roger that, EstherBot is back."
 }
