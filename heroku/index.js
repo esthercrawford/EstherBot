@@ -110,7 +110,7 @@ app.post('/webhook', function(req, res, next) {
         msg = messages[0];
     } else {
         msg = req.body.postbacks[0];
-        msg.text = msg.action.payload;
+        msg.text = msg.action.text;
     }
 
     stateMachine.receiveMessage(msg)

@@ -48,23 +48,15 @@ module.exports = new Script({
                 }
 
                 var response = scriptRules[upperText];
-                var lines = response.split(/(<img src=\'[^>]*\'\/>)/);
+                var lines = response.split('\n');
 
                 var p = Promise.resolve();
                 _.each(lines, function(line) {
                     line = line.trim();
-                    if (!line.startsWith("<")) {
-                        p = p.then(function() {
-                            return bot.say(line);
-                        });
-                    } else {
-                        // p = p.then(function() {
-                        //     var start = line.indexOf("'") + 1;
-                        //     var end = line.lastIndexOf("'");
-                        //     var imageFile = line.substring(start, end);
-                        //     return bot.sendImage(imageFile);
-                        // });
-                    }
+                    p = p.then(function() {
+                        console.log(line);
+                        return bot.say(line);
+                    });
                 })
 
                 return p.then(() => 'speak');
