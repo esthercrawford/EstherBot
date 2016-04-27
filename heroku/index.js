@@ -79,6 +79,9 @@ if (process.env.SERVICE_URL) {
 }
 
 app.post('/webhook', function(req, res, next) {
+    console.log("HELLO");
+    console.log(req.body);
+
     var isPostback = req.body.trigger == "postback";
     const messages = req.body.messages.reduce((prev, current) => {
         if (current.role === 'appUser') {
