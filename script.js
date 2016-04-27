@@ -48,7 +48,7 @@ module.exports = new Script({
                 }
 
                 var response = scriptRules[upperText];
-                var lines = response.split(/(<img src=\'[^>]*\'\/>)/);
+                var lines = response.split('\n');
 
                 var p = Promise.resolve();
                 _.each(lines, function(line) {
