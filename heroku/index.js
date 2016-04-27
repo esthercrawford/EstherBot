@@ -110,6 +110,7 @@ app.post('/webhook', function(req, res, next) {
     } else {
         msg = req.bodty.postbacks[0];
         msg.text = msg.action.payload;
+        console.log(msg);
     }
 
     stateMachine.receiveMessage(msg)
