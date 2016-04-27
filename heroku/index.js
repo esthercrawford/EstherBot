@@ -82,6 +82,19 @@ app.post('/webhook', function(req, res, next) {
     var isPostback = req.body.trigger == "postback";
     var msg = '';
 
+    const appUser = req.body.appUser;
+    const userId = appUser.userId || appUser._id;
+    const stateMachine = new StateMachine({
+        script,
+        bot: new BetterSmoochApiBot({
+            name,
+            avatarUrl,
+            lock,
+            store,
+            userId
+        })
+    });    
+
     if(!isPostback) {
         const messages = req.body.messages.reduce((prev, current) => {
             if (current.role === 'appUser') {
@@ -93,19 +106,6 @@ app.post('/webhook', function(req, res, next) {
         if (messages.length === 0 && !isTrigger) {
             return res.end();
         }
-
-        const appUser = req.body.appUser;
-        const userId = appUser.userId || appUser._id;
-        const stateMachine = new StateMachine({
-            script,
-            bot: new BetterSmoochApiBot({
-                name,
-                avatarUrl,
-                lock,
-                store,
-                userId
-            })
-        });
 
         msg = messages[0];
     } else {
