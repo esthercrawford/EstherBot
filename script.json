@@ -1,7 +1,31 @@
 {
-    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Yes](postback:twitter)",
-    "TWITTER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
-    "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back."
+    "BOT": "Hi there! 
+            I’m the personal bot of Esther, a Product Marketer from San Francisco.
+            ![Esther's Face](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)
+            Want to know more about bots or learn about Esther? %[I'm here for the bot](postback:I'M HERE FOR THE BOT) %[Tell me more about Esther](postback:TELL ME MORE ABOUT ESTHER)",
+    "I'm here for the bot": "Ha, I thought so!
+                            ![Funny GIF](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/cameron-robot.gif)
+                            Are you perhaps thinking about building your own bot? %[I'd like to](postback:I'D LIKE TO) %[Not yet...](postback:NOT YET)",
+    "I'd like to": "Cool. If you want, I can email you instructions for creating your own bot for free. AWESOME! NAH...",
+    "Not yet": "Hmm… it seems like you’re in research mode. I get that.
+                Here’s an article Esther wrote about why and how she built me. https://medium.com/life-learning/how-i-turned-my-resume-into-a-bot-and-how-you-can-too-f03847352baa
+                Did that scratch your itch for bot news? MORE BOTS! I'M READY TO MOVE ON",
+    "Awesome": "http://estherbot.us3.list-manage.com/subscribe?u=747676a510e61e338b488bc17&id=b41a573523",
+    "Nah...":  "Hmm… it seems like you’re in research mode. I get that.
+                Here’s an article Esther wrote about why and how she built me. https://medium.com/life-learning/how-i-turned-my-resume-into-a-bot-and-how-you-can-too-f03847352baa
+                Did that scratch your itch for bot news? MORE BOTS! I'M READY TO MOVE ON",
+    "More bots!": "So you've noticed the buzz about bots, AI and messaging interfaces...
+                  But why, right? Open web advocate Chris Messina breaks it down.
+                  https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991#.toes5yfo1
+                  Ok, so now you know all about #convcomm. KEEP TALKING BOTTY TO ME I'D LIKE TO LEARN ABOUT ESTHER",
+    "Talk botty to me": "In Silicon Valley there’s a lot of talk about “app fatigue”. People download but don’t use or forget about most apps.
+                        In the last couple of years messaging has superceded social networks thanks to platforms like Messenger, Telegram, Kik and Slack.
+                        image: https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/messaging-apps.png
+                        You probably chat more than you post to social networks. Now the question is how will that change affect how businesses communicate with customers.
+                        What's your take? BOTS WILL REPLACE APPS BETTER APPS WILL REPLACE APPS IT'LL BE A MIX OF BOTS AND APPS",
+    "BOTS WILL REPLACE APPS": "Gotcha. Thanks for sharing with me! TELL ME ABOUT ESTHER I'M DONE FOR NOW",
+    "BETTER APPS WILL RE PLACE APPS": "Gotcha. Thanks for sharing with me! TELL ME ABOUT ESTHER I'M DONE FOR NOW",
+    "IT'LL BE A MIX OF BOTS AND APPS": "Gotcha. Thanks for sharing with me! TELL ME ABOUT ESTHER I'M DONE FOR NOW",
+    "I'M DONE FOR NOW": "If you change your mind feel free to come back!", 
+    
 }
