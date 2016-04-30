@@ -45,9 +45,8 @@ Adding pictures is super easy. Make sure you upload the files to your img folder
 
 To add a photo you'll need to add: ![name of image](imageurl)\n
 
-Here's an example: 
-
-Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\n
+Here's an example of the photo code: 
+![image](/img/Screenshot%202016-04-29%2018.52.33.png)
 
 ##Add buttons to your messages
 On Facebook Messenger these buttons are called "structured messages". It makes it easier for your user to follow the script. They don't even have to type the keywords - they just have to select a button. That means fewer user errors and less frustration.
@@ -57,14 +56,15 @@ In the script.json file you'll notice this:
 
 What you need to know is that's a button. The "I'm here for the bot" piece is what the button says. The postback reference is for you to know what the button does.
 
-Here's the syntax for a button that sends a user to an external link: %[Tweet Esther](http://bit.ly/estherbot-tweet)
+Here's the syntax for a button that sends a user to an external link: 
+![Tweet Esther](/img/Screenshot%202016-04-29%2018.52.04.png)
 
 Notice "Tweet Esther" is what the button says, and then inside the parenthesis you find where the button links off to.
 
 ##Bring it altogether
 Read the code below and you'll see there are line breaks, an image, and 3 buttons in this bot's response.   
 
-"BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)",
+![all](/img/Screenshot%202016-04-29%2018.52.14.png)
 
 ##Bonus
 Open the Smooch [control panel](https://app.smooch.io) and add more integrations. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
