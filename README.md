@@ -45,12 +45,15 @@ Adding pictures is super easy. Make sure you upload the files to your img folder
 
 To add a photo you'll need to add: ![name of image](imageurl)\n
 
-Here's an example: Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\n
+Here's an example: 
+
+Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\n
 
 ##Add buttons to your messages
 On Facebook Messenger these buttons are called "structured messages". It makes it easier for your user to follow the script. They don't even have to type the keywords - they just have to select a button. That means fewer user errors and less frustration.
 
-In the script.json file you'll notice this: %[I'm here for the bot](postback:here_for_the_bot)
+In the script.json file you'll notice this: 
+![buttons](/img/Screenshot%202016-04-29%2018.51.57.png)
 
 What you need to know is that's a button. The "I'm here for the bot" piece is what the button says. The postback reference is for you to know what the button does.
 
