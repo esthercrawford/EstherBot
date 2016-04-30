@@ -1,7 +1,7 @@
 {
     "HELLO": "Hey there, how can I help you? %[Device is broken](postback:twitter) %[Need gel bands](postback:twitter)",
     "XXXX": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "NEED GEL BANDS": "OK, great. How many would you like to order?: %[1] $[3] $[5] $[10], 
+    "NEED GEL BANDS": "OK, great. How many would you like to order?: %[1] $[3] $[5] $[10]", 
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "DEVICE IS BROKEN": "Oh no! We're doing our best to make improvements. What exactly is wrong? %[No treatment] %[Doesn't charge]",
     "CONNECT ME": "",
