@@ -43,9 +43,7 @@ Now that message will be broken into two bubbles. First, it'll say "Hi there!" t
 ##Add images to your messages
 Adding pictures is super easy. Make sure you upload the files to your img folder. Then click on the image and select Raw to get the link for your image.
 
-To add a photo you'll need to add: ![name of image](imageurl)\n
-
-Here's an example of the photo code: 
+Here's an example of the syntax for adding an image: 
 ![image](/img/Screenshot%202016-04-29%2018.52.33.png)
 
 ##Add buttons to your messages
