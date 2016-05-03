@@ -1,9 +1,9 @@
 {
-    "HELLO": "Hey, this is your CURbot! How can I help you?",
-    "BROKEN": "We're sorry to hear that. Would you like us to replace it or do you want a refund: %[Replace]%[Refund]",
-    "REPLACE": "OK, let's get you a new one",
-    "REFUND": "Wokring on it now...",
-    "MORE": "Great! How many would you like to oder %[1] %[3] %[5]",
+    "HELP": "Hey, this is your CURbot! How can I help you?",
+    "broken": "We're sorry to hear that. Would you like us to replace it or do you want a refund: %[Replace]%[Refund]",
+    "replace": "OK, let's get you a new one",
+    "refund": "Wokring on it now...",
+    "more": "Great! How many would you like to oder %[1] %[3] %[5]",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, CURbot is back."
 }
