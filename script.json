@@ -1,5 +1,5 @@
 {
-    "HELP": "Hey, this is your CURbot! How can I help you?",
+    "HELP": "Hey, this is your CURbot! How can I help you? %[broken](postback)",
     "broken": "We're sorry to hear that. Would you like us to replace it or do you want a refund: %[Replace]%[Refund]",
     "replace": "OK, let's get you a new one",
     "refund": "Wokring on it now...",
