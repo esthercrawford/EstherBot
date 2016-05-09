@@ -71,3 +71,6 @@ Read the code below and you'll see there are line breaks, an image, and 3 button
 Open the Smooch [control panel](https://app.smooch.io) and add more integrations. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
 
 ![slack](/img/slack.png)
+
+##Troubleshooting your bot
+Andrew at Smooch.io added some info for how to get your bot in line if it's acting up. It requires the command line so here you go: https://github.com/alavers/EstherBot/blob/troubleshooting-docs/README.md#troubleshooting-your-bot
