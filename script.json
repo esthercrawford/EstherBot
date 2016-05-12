@@ -1,7 +1,7 @@
 {
     "BOT": "Hi there!\nI’m the personal bot of Sujit, a Web Developer from Kathmandu, Nepal.",
     "HELLO": "Hey, How are you? Do you want to tell Sujit that you're talking to his bot? %[Tell him](postback:twitter)",
-    "TELL HER": "Let's tweet @Sujit so he knows you're talkign to him. Here's a tweet that's ready to go: %[Tweet Sujit](http://bit.ly/1T7CLwT)",
+    "TELL HIM": "Let's tweet @Sujit so he knows you're talkign to him. Here's a tweet that's ready to go: %[Tweet Sujit](http://bit.ly/1T7CLwT)",
     "I LOVE YOU": "Awh, Thankx but I love my wife!",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, Sujit is back."
