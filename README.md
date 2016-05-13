@@ -44,25 +44,39 @@ Now that message will be broken into two bubbles. First, it'll say "Hi there!" t
 Adding pictures is super easy. Make sure you upload the files to your img folder. Then click on the image and select Raw to get the link for your image.
 
 Here's an example of the syntax for adding an image: 
-![image](/img/Screenshot%202016-04-29%2018.52.33.png)
+
+    Hi there!\nI'm the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/EstherBot/master/img/esther.jpg)
 
 ##Add buttons to your messages
 On Facebook Messenger these buttons are called "structured messages". It makes it easier for your user to follow the script. They don't even have to type the keywords - they just have to select a button. That means fewer user errors and less frustration.
 
 In the script.json file you'll notice this: 
-![buttons](/img/Screenshot%202016-04-29%2018.51.57.png)
 
-What you need to know is that's a button. The "I'm here for the bot" piece is what the button says. The postback reference is for you to know what the button does.
+    %[Tweet Esther](http://bit.ly/estherbot-tweet)
 
-Here's the syntax for a button that sends a user to an external link: 
-![Tweet Esther](/img/Screenshot%202016-04-29%2018.52.04.png)
+This is a smiple link button. When the user taps it, they will open the link in a new browser window.
 
-Notice "Tweet Esther" is what the button says, and then inside the parenthesis you find where the button links off to.
+If you want to have a button trigger your bot to do something, you can use a postback buttons that looks like this:
+
+    %[Tell her](postback:twitter)
+
+The syntax is similar to a link button, but note the `postback:` prefix. The "Tell her" piece is what the button says, and the "twitter" part after the `postback:` prefix is an extra note you can include in the notificaiton your bot receieves when the user taps the button.
+
+⚠️ **Note:** Postback buttons work using Smooch webhooks. This means that your bot needs to be deployed to heroku before the buttons will do anything. If you want to test your bot on your local machine you'll have to use a tunnel service such as [ngrok.io](https://ngrok.io) to make your internet visible, and set your local `SERVICE_URL` environment variable appropraitely. For more information bout postbacks, you can check out the Smooch docs here:
+
+- Postbacks: http://docs.smooch.io/#postbacks
+- Webhooks: http://docs.smooch.io/rest/#webhooks
+
+The good news is Estherbot is clever, and simplifies much of this! Estherbot [will automatically](https://github.com/esthercrawford/EstherBot/blob/master/heroku/index.js#L113) accept postback events and treat them as if they were a keyword sent by the user. For example, when a user taps a postback button such as `%[Tell her](postback:twitter)` Estherbot will react as if they had typed out the message `Tell her`.
 
 ##Bring it altogether
-Read the code below and you'll see there are line breaks, an image, and 3 buttons in this bot's response.   
+Read the JSON below and you'll see there are line breaks, an image, and 3 buttons in this bot's response.   
 
-![all](/img/Screenshot%202016-04-29%2018.52.14.png)
+    {
+        "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)"
+    }
+
+⚠️ **Note:** If you're not familiar with the JSON syntax you can always paste your script into http://jsonlint.com/ to make sure your syntax in order.
 
 ##Bonus
 Open the Smooch [control panel](https://app.smooch.io) and add more integrations. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
