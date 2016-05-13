@@ -1,10 +1,10 @@
 # EstherBot built using the Smooch Bot example
 If you want a slightly more sophisticated setup and are comfortable using the console then go see the original here: https://github.com/smooch/smooch-bot-example 
 
-# Build Your Bot
-
 Or if you want to test out EstherBot live go say hi on your platform of choice:
 http://estherbot.com
+
+# Build Your Bot
 
 Creating this version will give you a web based chat app. With a few integrations inside of Smooch (like Twilio) you can have your bot talking on other platforms too including SMS, Facebook, and Telegram.  
 
