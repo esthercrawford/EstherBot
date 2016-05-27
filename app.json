@@ -7,15 +7,15 @@
   "logo": "http://www.estherbot.com/wp-content/uploads/2016/03/EstherBot-photo.png",
   "env": {
     "SMOOCH_APP_TOKEN": {
-      "description": "Your Smooch app token which is used to initialize the web widget.",
+      "description": "Aqbmqo3rxm834gzucenndu5zt",
       "required": true
     },
     "SMOOCH_KEY_ID": {
-      "description": "Your Smooch key ID, used to talk to the Smooch API",
+      "description": "pp_5748b686b2ea9d4200ec0447",
       "required": true
     },
     "SMOOCH_SECRET": {
-      "description": "Your Smooch secret, used to talk to the Smooch API",
+      "description": "vxmdzY2DJTGZ-ZgOpSniMLYF",
       "required": true
     }
   }
