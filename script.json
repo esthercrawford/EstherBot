@@ -3,7 +3,7 @@
     "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
     "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LIKE THIS": "Awh, shucks! I like you too!",
-    "BOT": I'm a T-Bot short and stout
+    "BOT": "I'm a T-Bot short and stout",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
