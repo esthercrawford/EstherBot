@@ -1,7 +1,7 @@
 {
-    "CHATBOT": "Hi there my fellow DDI family member!\nI’m the personal bot of Joe Mc Bride the 1st, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:learn_about_joe) %[One random fact!](postback:random_fact)",
-    "HELLO": "Hey, I'm so glad you set me up! Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
-    "TELL HIM": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
+    "HI": "Hi there my fellow DDI family member!\nI’m the personal bot of Joe Mc Bride the 1st, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:learn_about_joe) %[One random fact!](postback:random_fact)",
+    "ARE YOU REAL": "Hey, who do you think your talking to. I'm the main bot around here, you know? Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
+    "TELL HIM": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Joe](http://bit.ly/1ZdhjuD)",
     "I LIKE THIS": "Awh, shucks! I like you too!",
     "BOT": "I'm a T-Bot short and stout",
     "I'M HERE FOR THE BOT":"Okay, Okay already. I think you made a bad chooice. Joe is much more interesting :) ",
