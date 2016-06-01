@@ -1,6 +1,6 @@
 {
-    "CHATBOT": "Hi there my fellow DDI family member!\nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:bot) %[Learn about Joe](postback:learn_about_joe) %[One random fact!](postback:random_fact)",
-    "HELLO": "Hey, I'm so glad you set me up! Do you want to tell Joe that you're talking to his bot? %[Tell her](postback:twitter)",
+    "CHATBOT": "Hi there my fellow DDI family member!\nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:learn_about_joe) %[One random fact!](postback:random_fact)",
+    "HELLO": "Hey, I'm so glad you set me up! Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
     "TELL HIM": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LIKE THIS": "Awh, shucks! I like you too!",
     "BOT": "I'm a T-Bot short and stout",
