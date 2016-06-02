@@ -1,5 +1,6 @@
 {
     "HI": "Hi there my fellow DDI family member!\nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
+     "Hello": "Hello my fellow DDI family member!\nI’m a bot by Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
     "ARE YOU REAL": "Hey, who do you think your talking to. I'm the main bot around here, you know? Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
     "TELL HIM": "Okay, Let's tweet Joe @haon90 so he knows you're thinking of setting a bot up. Here's a tweet that's ready to go: %[Tweet Joe](http://bit.ly/1ZdhjuD)",
     "I LIKE THIS": "Awh, shucks! I like you too!",
