@@ -4,6 +4,7 @@
     "ARE YOU REAL": "Hey, who do you think your talking to. I'm the main bot around here, you know? Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
     "TELL HIM": "Okay, Let's tweet Joe @haon90 so he knows you're thinking of setting a bot up. Here's a tweet that's ready to go: %[Tweet Joe](http://bit.ly/1ZdhjuD)",
     "I LIKE THIS": "Awh, shucks! I like you too!",
+    "HI IM RICH":"I was thinking that. You sure don't look poor to me :)",
     "BOT": "I'm a T-Bot short and stout",
     "I'M HERE FOR THE BOT":"Okay, Okay already. I think you made a bad chooice. Joe is much more interesting :) ",
     "LEARN ABOUT JOE":"I asked Joe a serious of questions but you know I couldn’t understand a dam thing he said with that accent. Let’s just say he's a great lad.",
