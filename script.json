@@ -1,8 +1,12 @@
 {
-    "HI": "Hello Dear!\nI’m the personal bot of Roshan, an Intrapreneur from Bangalore, India.\n![Roshan](https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAKaAAAAJDFiYzExMmM4LTY5Y2EtNGYyMS1iN2I0LWI3ZTFjNjE0MjQ1Mg.jpg)\nWant to know more about bots or about Roshan? %[Tell me about bots!](postback:here_for_the_bot) %[More about Roshan!](postback:learn_about_Roshan) %[Something new!](postback:random_fact)",
+    "HI": "Hello Dear!\nI’m the personal bot of Roshan, an Intrapreneur from Bangalore, India.\n![Roshan](https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAKaAAAAJDFiYzExMmM4LTY5Y2EtNGYyMS1iN2I0LWI3ZTFjNjE0MjQ1Mg.jpg)\nWant to know more about bots or about Roshan? %[Tell me about bots](postback:here_for_the_bot) %[More about Roshan](postback:learn_about_Roshan) %[Something new](postback:random_fact)",
     "HELLO": "Hi! I'm so glad you are here! Do you want to tell Roshan that you're talking to his bot? %[Tell him](postback:twitter)",
-    "TELL HIM": "Let's tweet @ Roshan so he knows you're using his Bot. Here's the link: %[Tweet Roshan](https://twitter.com/@roshan_khan)",
+    "TELL HIM": "Good, then let's tweet him that you're talking his Bot! Here you go: %[Tweet Roshan](https://twitter.com/@roshan_khan)",
     "I LOVE YOU": "Wow! I love you too!",
     "CONNECT ME": "",
-    "DISCONNECT": "Welcome back!, RoshanBot is here!"
+    "DISCONNECT": "Welcome back!, RoshanBot is here!",
+    "TELL ME ABOUT BOTS": "Really? You don't want to know Roshan? %[More about Roshan](postback:learn_about_Roshan)",
+    "MORE ABOUT ROSHAN": "What's interesting to you? %[Personal?](https://www.facebook.com/roshankhanface) %[Professional?](https://twitter.com/@roshan_khan)",
+    "SOMETHING NEW": "Welcome back!, RoshanBot is here!",
+    "I HATE YOU": "Hmmm! But I still love you!"
 }
