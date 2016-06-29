@@ -25,9 +25,9 @@ module.exports = new Script({
 
             function updateSilent() {
                 switch (upperText) {
-                    case "CONNECT ME":
+                    case "STOP":
                         return bot.setProp("silent", true);
-                    case "DISCONNECT":
+                    case "RESTART":
                         return bot.setProp("silent", false);
                     default:
                         return Promise.resolve();
