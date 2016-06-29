@@ -11,6 +11,14 @@ const SmoochCore = require('smooch-core');
 const jwt = require('../jwt');
 const fs = require('fs');
 
+const name = 'SmoochBot';
+const avatarUrl = 'https://s.gravatar.com/avatar/f91b04087e0125153623a3778e819c0a?s=80';
+const store = new SmoochApiStore({
+    jwt
+});
+const lock = new MemoryLock();
+const webhookTriggers = ['message:appUser', 'postback'];
+
 class BetterSmoochApiBot extends SmoochApiBot {
     constructor(options) {
         super(options);
