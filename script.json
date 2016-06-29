@@ -1,7 +1,7 @@
 {
-    "HI": "Hi! Welcome. Just say BOT to get started.",
-    "HELLO": "Hello there! Nice to meet you. Just say BOT to get started.",
-    "BOT": "Hello Dear!\nI’m the personal bot of Roshan, an Intrapreneur from Bangalore, India.\n![Roshan](https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAKaAAAAJDFiYzExMmM4LTY5Y2EtNGYyMS1iN2I0LWI3ZTFjNjE0MjQ1Mg.jpg)\nWant to know more about bots or about Roshan? %[Tell me about bots](postback:here_for_the_bot) %[More about Roshan](postback:twitter) %[Something new](postback:random_fact)",
+    "HI": "Welcome. Just say BOT to get started.",
+    "HELLO": "Hi! Nice to meet you. Just say BOT to get started.",
+    "BOT": "Hello there!\nI’m the personal bot of Roshan, an Intrapreneur from Bangalore, India.\n![Roshan](https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAKaAAAAJDFiYzExMmM4LTY5Y2EtNGYyMS1iN2I0LWI3ZTFjNjE0MjQ1Mg.jpg)\nWant to know more about bots or about Roshan? %[Tell me about bots](postback:here_for_the_bot) %[More about Roshan](postback:twitter) %[Something new](postback:random_fact)",
     "STOP": "Thank you! Ciao, RoshanBot is always here!",
     "RESTART": "Hi! Nice to meet you. Do you want to tell Roshan that you're talking to his bot? %[Tell him](postback:twitter)",
     "TELL HIM": "Good, then let's tweet him that you're talking his Bot! Here you go: %[Tweet Roshan](https://twitter.com/@roshan_khan)",
