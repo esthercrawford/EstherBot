@@ -112,6 +112,7 @@ function handlePostback(req, res) {
         res.end();
     }
 
+    postback.text = postback.action.text;
     stateMachine.receiveMessage(postback)
         .then(() => res.end())
         .catch((err) => {
