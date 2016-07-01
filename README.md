@@ -57,7 +57,7 @@ In the script.json file you'll notice this:
 
     %[Tweet Esther](http://bit.ly/estherbot-tweet)
 
-This is a smiple link button. When the user taps it, they will open the link in a new browser window.
+This is a simple link button. When the user taps it, they will open the link in a new browser window.
 
 If you want to have a button trigger your bot to do something, you can use a postback buttons that looks like this:
 
