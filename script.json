@@ -1,9 +1,9 @@
 {
-    "HI": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nI can tell you a bunch of stuff about Esther. Let me know what's interesting to you. %[EDUCATION](postback:education) %[WORK](postback:work) %[PROJECTS](postback:project)",
+    "HI": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nI can tell you a bunch of stuff about Maria. Let me know what's interesting to you. %[EDUCATION](postback:education) %[WORK](postback:work) %[PROJECTS](postback:project)",
     "HELLO": "Hey, I'm so glad you set MariaBot up! Do you want to tell Maria that you're talking to her bot? %[Tell her](postback:twitter)",
     "TELL HER": "Let's tweet @ Maria so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, MariaBot is back."
-    "PROJECTS": "She participated in IGEM in 2014."
+    //"PROJECTS": "She participated in IGEM in 2014."
 }
