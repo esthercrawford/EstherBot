@@ -1,4 +1,5 @@
 {
+    "MORE": "Ok, here's other stuff to check out. %[Childhood](postback:childhood) %[Education](postback:education) %[Career](postback:career)\nOr maybe you want interesting nuggets or to talk directly with Esther... %[One random fact!](postback:random_fact) %[Connect with Esther](postback:connect_me)",
     "HI": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nI can tell you a bunch of stuff about Maria. Let me know what's interesting to you. %[EDUCATION](postback:education) %[WORK](postback:work) %[PROJECTS](postback:projects)",
     "HELLO": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nI can tell you a bunch of stuff about Maria. Let me know what's interesting to you. %[EDUCATION](postback:education) %[WORK](postback:work) %[PROJECTS](postback:projects)",
     "PROJECTS": "iGEM in 2014",
