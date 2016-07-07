@@ -1,5 +1,5 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nWant to know more about bots or learn about Maria? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Maria](postback:learn_about_maria) %[One random fact!](postback:random_fact)",
+    "BOT": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nWant to know more about bots or learn about Maria? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Maria](postback:learn_about_maria) %[One random fact!](postback:random_fact)",
     "HELLO": "Hey, I'm so glad you set MariaBot up! Do you want to tell Maria that you're talking to her bot? %[Tell her](postback:twitter)",
     "TELL HER": "Let's tweet @ Maria so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LOVE YOU": "Awh, shucks! I love you too!",
