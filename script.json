@@ -1,8 +1,10 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Danny, a Financial Advisor from Beverly Hills.\nhttps://www.facebook.com/dannybckim\nMay I help you with any of the financial services we offer?",
+    "HI": "Hi there!\nI’m the personal bot of Danny, a Financial Advisor from Beverly Hills.\nhttps://www.facebook.com/dannybckim\nMay I help you with any of the financial services we offer?",
     "HELLO": "Hi there!\nI’m the personal bot of Danny, a Financial Advisor from Beverly Hills.\nMay I help you with any of the financial services we offer?"
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "FINANCIAL SERVICES": "As a Financial Advisor, Danny helps families meet their financial goals with services and solutions including, but not limited to, income protection, retirement planning, life insurance, etc.",
+    "INCOME PROTECTION": "Income protection is a financial service that helps families secure their income in cases of emergency.",
+    "RETIREMENT PLANNING": "Retirement planning helps families make smart choices about money that reflect their values and goals in the time they need.",
+    "LIFE INSURANCE": "Life insurance is a financial service where you transfer the risk of the person's death to an insurer for a consideration.\nThis is not a simple answer, and an appointment with Danny would be better.",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
