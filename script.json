@@ -1,7 +1,10 @@
 {
     "HI": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nI can tell you a bunch of stuff about Maria. Let me know what's interesting to you. %[EDUCATION](postback:education) %[WORK](postback:work) %[PROJECTS](postback:projects)",
     "HELLO": "Hi there!\nI’m Dr. Geek, the personal bot of Maria, a DIY Biologist from Hong Kong.\n![maria](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/maria_circle.jpg)\nI can tell you a bunch of stuff about Maria. Let me know what's interesting to you. %[EDUCATION](postback:education) %[WORK](postback:work) %[PROJECTS](postback:projects)",
-        "EDUCATION":"",
+        "EDUCATION":"She always had a strong internal drive to succeed and make her own way in the world.\n Maria is a Applied Biology fresh graduate from the City University of Hong Kong. Before going to university, she studied Associate degree in Science in Hong Kong Community College. The high school public exam score was not satisfactory to send her to university, yet this academic failure did not beat her up. It even made her stronger and become a proactive learner. Her life goal is to become a lifelong learner. %[Degrees](postback:education_degrees) %[Why Biology?!](postback:education_biology) %[Exchange Programme](postback:education_USA)",
+            "DEGREES": "",
+            "WHY BIOLOGY?!": "",
+            "EXCHANGE PROGRAMME": "",
         "WORK": "",
         "PROJECTS": "Here're the projects Maria did in the past: %[iGEM](postback:iGEM) %[EdLab - an educational community](postback:EdLab) %[City Run App](postback:City_Run) %[blueberry juice-powered solar cell](postback:blueberry_solar_cell) \n and some are ongoing:%[Open PCR machine](postback:open_pcr) %[Portable Laminar Flow hood](postback:laminar_flow_hood) %[Zero to Maker](http://marmaryee.wix.com/zerotomaker)",
         "IGEM": "Maria joined the iGEM syethetic biology competition in 2014. Here's the wiki site of their project (http://2014.igem.org/Team:CityU_HK)",
