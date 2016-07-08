@@ -9,9 +9,10 @@
         "PHILOSOPHY": "",
         "TRAVEL": "",
         "RANDOM FACT": "",
+        "CONNECT WITH MARIA": "One moment please, I'm helping you to connect with Maria.",
 
     "TELL HER": "Let's tweet @ Maria so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LOVE YOU": "Awh, shucks! I love you too!",
-    "CONNECT ME": "One moment please, I'm helping you to connect with Maria.",
+    "CONNECT ME": " ",
     "DISCONNECT": "Roger that, MariaBot is back."
 }
