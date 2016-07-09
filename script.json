@@ -7,7 +7,7 @@
             "EXCHANGE PROGRAMME": "",
         "WORK": "",
         "PROJECTS": "Here're the projects Maria did in the past: %[iGEM](postback:iGEM) %[EdLab](postback:EdLab) %[City Run App](postback:City_Run) %[blueberry juice-powered solar cell](postback:blueberry_solar_cell) \n and some are ongoing:%[Open PCR machine](postback:open_pcr) %[Portable Laminar Flow hood](postback:laminar_flow_hood) %[Zero to Maker](http://marmaryee.wix.com/zerotomaker)",
-        "IGEM": "Maria joined the iGEM syethetic biology competition in 2014. Here's the wiki site of their project (http://2014.igem.org/Team:CityU_HK)",
+        "IGEM": "Maria joined the iGEM syethetic biology competition in 2014. She together with her other 11 teammates to genetically modify E.coli that perform new function of converting fat in our guts into DHA. \nSo that it serves the purpose of helping obese people lose weight and also protect their cadiovascular vessels. Here's the wiki site of their project:![igem](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/igem.png) %[iGEM wiki](http://2014.igem.org/Team:CityU_HK)",
     "MORE": "Ok, here's other stuff to check out. %[Childhood](postback:childhood) %[Philosophy](postback:philosophy) %[Travel](postback:travel)\nOr maybe you want interesting nuggets or to talk directly with Maria... %[One random fact!](postback:random_fact) %[Connect with Maria](postback:connect_me)",
         "CHILDHOOD": "It's an interesting but complicated story.\nShe grew up in Hong Kong and raised up in a happy family. She is the only child but this doesn't make her feel lonely. She met a lot of friends in her school swimming team. \nDuring the 7 years sport training starting from primary 6 until form 6, she was taught to be a tough girl and know very well how determination plays a critical role in achieving goals. Btw if you ever want to chat about something else, just say 'more'.",
         "PHILOSOPHY": "",
@@ -17,7 +17,7 @@
     "EDLAB": "![edlab](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/EdLab%20logo.png)\n ![ws](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/edlab_ws.jpg) \n EdLab is an educatiional community set up by Maria in order to promote self-discovery learning among kids. She had organised 3 workshops for a total of 100 four to ten years old kids. You can find out more in EdLab facebook page: %[EdLab Page](https://www.facebook.com/EdLab.TheLeaderInMe/)",
     "TELL HER": "Let's tweet @ Maria so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Maria](http://bit.ly/estherbot-tweet)",
     
-    //Chit Chat
+
     "COOL": "I THINK SO",
     "COOL!": "I THINK SO",
     "WHERE ARE YOU?": "HONG KONG",
