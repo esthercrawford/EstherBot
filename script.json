@@ -17,7 +17,7 @@
     "EDLAB": "![edlab](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/EdLab%20logo.png)\n ![ws](https://raw.githubusercontent.com/marialilokyee/MariaBot/master/img/edlab_ws.jpg) \n EdLab is an educatiional community set up by Maria in order to promote self-discovery learning among kids. She had organised 3 workshops for a total of 100 four to ten years old kids. You can find out more in EdLab facebook page: %[EdLab Page](https://www.facebook.com/EdLab.TheLeaderInMe/)",
     "TELL HER": "Let's tweet @ Maria so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Maria](http://bit.ly/estherbot-tweet)",
     
-    /*Chit Chat*/
+    //Chit Chat
     "COOL": "I THINK SO",
     "COOL!": "I THINK SO",
     "WHERE ARE YOU?": "HONG KONG",
