@@ -1,8 +1,10 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)",
-    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "HI": "Hi there!\nI’m the personal bot of Danny, a Financial Advisor from Beverly Hills.\nhttps://www.facebook.com/dannybckim\nMay I help you with any of the financial services we offer?",
+    "HELLO": "Hi there!\nI’m the personal bot of Danny, a Financial Advisor from Beverly Hills.\nMay I help you with any of the financial services we offer?"
+    "FINANCIAL SERVICES": "As a Financial Advisor, Danny helps families meet their financial goals with services and solutions including, but not limited to, income protection, retirement planning, life insurance, etc.",
+    "INCOME PROTECTION": "Income protection is a financial service that helps families secure their income in cases of emergency.",
+    "RETIREMENT PLANNING": "Retirement planning helps families make smart choices about money that reflect their values and goals in the time they need.",
+    "LIFE INSURANCE": "Life insurance is a financial service where you transfer the risk of the person's death to an insurer for a consideration.\nThis is not a simple answer, and an appointment with Danny would be better.",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
