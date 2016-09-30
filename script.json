@@ -1,5 +1,5 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of David, an Entrepreneur from São Paulo.\n![esther](https://raw.githubusercontent.com/dgdelira/EstherBot/blob/master/img/dgl_photo.jpg)\nWant to learn more about David? %[Learn about David](postback:learn_about_david) %[One random fact!](postback:random_fact)",
+    "BOT": "Hi there!\nI’m the personal bot of David, an Entrepreneur from São Paulo.\n![david](https://raw.githubusercontent.com/EstherBot/img/dgl_photo.jpg)\nWant to learn more about David? %[Learn about David](postback:learn_about_david) %[One random fact!](postback:random_fact)",
     "HELLO": "Hey, I'm so glad to talk to you!",
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CONNECT ME": "",
