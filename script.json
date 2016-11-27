@@ -1,8 +1,13 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)",
-    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "BOT": "Hi there!\nI’m the personal bot of Sujit, a Web Developer from Kathmandu, Nepal.",
+    "HELLO": "Hey, How are you? Do you want to tell Sujit that you're talking to his bot? %[Tell him](postback:twitter)",
+    "TELL HIM": "Let's tweet @Sujit so he knows you're talkign to him. Here's a tweet that's ready to go: %[Tweet Sujit](http://bit.ly/1T7CLwT)",
+    "HI": "Hi",
+    "HOW ARE YOU?": "Fine, How about you?",
+    "WHAT DO YOU DO?": "I am a web developer.I developer websites.",
+    "WHERE DO YOU LIVE?": "I live in Chhauni, Kathmandu.I am from Nepal",
+    "WHAT ARE YOUR INTERESTS?": "I love learning about new tachnologies, like to play video games, watch movies.",
+    "I LOVE YOU": "Awh, Thankx but I love my wife!",
     "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back."
+    "DISCONNECT": "Roger that, Sujit is back."
 }
