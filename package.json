@@ -13,9 +13,9 @@
     "hbs": "^4.0.0",
     "jsonwebtoken": "^5.7.0",
     "lodash": "^4.6.1",
-    "smooch-bot": "https://github.com/skhavari/smooch-bot.git",
+    "smooch-bot": "^1.0.1",
     "smooch-core": "^1.1.1"
-  },
+   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.0.6",
