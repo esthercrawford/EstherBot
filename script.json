@@ -1,10 +1,9 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Nikhil Dikshit, a full-stack developer from Jaipur, India.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about Nikhil? %[Check him on LinkedIn]((https://www.linkedin.com/in/nikhildikshit)) %[View his resume](https://www.linkedin.com/in/nikhildikshit) %[What is his contact number?](8890461242)",
-    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "BOT": "Hi there!\nI’m the personal bot of Nikhil Dikshit, a full-stack developer from Jaipur, India.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about Nikhil? %[Check him on LinkedIn](https://www.linkedin.com/in/nikhildikshit) %[View his resume](https://drive.google.com/file/d/0Bz1RpiPdp1C5aWJlNlNYTHpnRVU5ZHFhUVZfakpFR2Y1dUZr/view?usp=sharing) %[What is his contact number?]("8890461242")",
+    "HELLO": "Hey, I'm so glad you look forward to discussions! Do you want to tell Nikhil that you're talking to her bot? %[Tell her](postback:twitter)",
+    "TELL HER": "Let's tweet @ Nikhil so he knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "CONNECT ME": "",
-    "DISCONNECT": "Roger that, EstherBot is back."
+    "DISCONNECT": "Roger that, the bot is back."
 }
 
 
