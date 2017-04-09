@@ -1,5 +1,5 @@
 {
-    "HI": "Hi there my friend! I’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/newbrand/logo_ddi_new_color.svg)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
+    "HI": "Hi there my friend! \nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/newbrand/logo_ddi_new_color.svg)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
      "HELLO": "Hello my fellow DDI family member!\nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
     "ARE YOU REAL": "Hey, who do you think your talking to. I'm the main bot around here, you know? Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
     "TELL HIM": "Okay, Let's tweet Joe @haon90 so he knows you're thinking of setting a bot up. Here's a tweet that's ready to go: %[Tweet Joe](http://bit.ly/1ZdhjuD)",
@@ -7,7 +7,7 @@
     "HI IM RICH":"I was thinking that. You sure don't look poor to me :)",
     "BOT": "I'm a T-Bot short and stout",
     "I'M HERE FOR THE BOT":"Okay, Okay already. I think you made a bad chooice. Joe is much more interesting :) ",
-    "LEARN ABOUT JOE":"I asked Joe a serious of questions but you know I couldn’t understand what he said with his accent. Let’s just say he's a great lad.",
+    "LEARN ABOUT JOE":"I asked Joe a serious of questions but you know I couldn’t understand what he said with his accent. Let’s just say he's amazing :)",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
