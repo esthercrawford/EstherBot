@@ -1,8 +1,13 @@
 {
-    "BOT": "Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to know more about bots or learn about Esther? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Esther](postback:learn_about_esther) %[One random fact!](postback:random_fact)",
-    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Esther that you're talking to her bot? %[Tell her](postback:twitter)",
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "HI": "Hi there my friend! \nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.oceanwidemedia.com/images/logo_ib.png)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
+     "HELLO": "Hello my friend!\nI’m the personal bot of Joe Mc Bride, \n![DDI](http://www.ddiworld.com/DDI/media/site-images/logos/logo_ddi_resp_black_text.gif)\nWant to know more about bots or learn about Joe? %[I'm here for the bot](postback:BOT) %[Learn about Joe](postback:about_joe)",
+    "ARE YOU REAL": "Hey, who do you think your talking to. I'm the main bot around here, you know? Do you want to tell Joe that you're talking to his bot? %[Tell him](postback:twitter)",
+    "TELL HIM": "Okay, Let's tweet Joe @haon90 so he knows you're thinking of setting a bot up. Here's a tweet that's ready to go: %[Tweet Joe](http://bit.ly/1ZdhjuD)",
+    "I LIKE THIS": "Awh, shucks! I like you too!",
+    "HI IM RICH":"I was thinking that. You sure don't look poor to me :)",
+    "BOT": "I'm a T-Bot short and stout",
+    "I'M HERE FOR THE BOT":"Okay, Okay already. I think you made a bad chooice. Joe is much more interesting :) ",
+    "LEARN ABOUT JOE":"I asked Joe a serious of questions but you know I couldn’t understand what he said with his accent. Let’s just say he's amazing :)",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
