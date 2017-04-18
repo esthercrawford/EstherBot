@@ -26,7 +26,7 @@ Creating this version will give you a web based chat app. With a few integration
 
 1. You should be all set. Open your Heroku app and start chatting with your new bot!
 
-##Teach Your Bot To Talk
+## Teach Your Bot To Talk
 Now that you have a bot you need to decide what it'll say. That's where the file script.json comes in. It's the document you need to edit to make your bot talk.
 
 By clicking on the pencil icon you can edit the document. The keywords are on the left, and the bot's response is on the right. For example, if a user types "hello" then the bot will say "Sweet, let's do this..."
@@ -37,20 +37,20 @@ The only two keywords you don't want to change are CONNECT ME and DISCONNECT. CO
 
 Also, the initial script starts with "So you want to learn about Esther? ..." but of course you'll want to change it. You can edit it in the script.js file.
 
-##Add line breaks to your messages
+## Add line breaks to your messages
 If you want your bot's responses to be broken into different bubbles you'll need to add \n.
 Here's an example: Hi there!\nI’m the personal bot of Esther, a Product Marketer from San Francisco.
 
 Now that message will be broken into two bubbles. First, it'll say "Hi there!" then it'll say "I'm the personal bot of Esther, a Product Marketer from San Francisco."
 
-##Add images to your messages
+## Add images to your messages
 Adding pictures is super easy. Make sure you upload the files to your img folder. Then click on the image and select Raw to get the link for your image.
 
 Here's an example of the syntax for adding an image: 
 
     Hi there!\nI'm the personal bot of Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/EstherBot/master/img/esther.jpg)
 
-##Add buttons to your messages
+## Add buttons to your messages
 On Facebook Messenger these buttons are called "structured messages". It makes it easier for your user to follow the script. They don't even have to type the keywords - they just have to select a button. That means fewer user errors and less frustration.
 
 In the script.json file you'll notice this: 
@@ -72,7 +72,7 @@ The syntax is similar to a link button, but note the `postback:` prefix. The "Te
 
 The good news is Estherbot is clever, and simplifies much of this! Estherbot [will automatically](https://github.com/esthercrawford/EstherBot/blob/master/heroku/index.js#L113) accept postback events and treat them as if they were a keyword sent by the user. For example, when a user taps a postback button such as `%[Tell her](postback:twitter)` Estherbot will react as if they had typed out the message `Tell her`.
 
-##Bring it altogether
+## Bring it altogether
 Read the JSON below and you'll see there are line breaks, an image, and 3 buttons in this bot's response.   
 
     {
@@ -81,7 +81,7 @@ Read the JSON below and you'll see there are line breaks, an image, and 3 button
 
 ⚠️ **Note:** If you're not familiar with the JSON syntax you can always paste your script into http://jsonlint.com/ to make sure your syntax in order.
 
-##Bonus
+## Bonus
 Open the Smooch [control panel](https://app.smooch.io) and add more integrations. You can add new user channels like Twilio SMS, or you can add Slack or HipChat which will let you join in on the conversation along side your bot. Pretty neat!
 
 ![slack](/img/slack.png)
