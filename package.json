@@ -13,7 +13,7 @@
     "hbs": "^4.0.0",
     "jsonwebtoken": "^5.7.0",
     "lodash": "^4.6.1",
-    "smooch-bot": "https://github.com/skhavari/smooch-bot.git",
+    "smooch-bot": "https://github.com/smooch/smooch-bot.git",
     "smooch-core": "^1.1.1"
   },
   "devDependencies": {
